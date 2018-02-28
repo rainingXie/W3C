@@ -1,0 +1,7 @@
+一个学习类的APP，w3c客户端，评论回复，视频播放，分享，第三方登录，浮动按钮，相机相册，图片上传，本地存储ormlite，主页侧滑，数据下载
+
+1.0： 页面较为简陋使用的是volley网络请求，图片加载使用时ImageLoader
+
+2.0： 该APP重新调整了整个布局框架，比较符合当前APP的页面架构
+
+AppManager：APP页面栈管理类 FaceConversionUtil：表情包
