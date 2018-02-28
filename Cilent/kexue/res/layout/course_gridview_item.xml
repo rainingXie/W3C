@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:descendantFocusability="blocksDescendants" >
+
+    <Button
+        android:id="@+id/book"
+        android:layout_width="90dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/book_cover"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        android:text="html课程"
+        android:textSize="12sp"
+        android:textColor="@color/bottomtab_press" />
+
+</LinearLayout>

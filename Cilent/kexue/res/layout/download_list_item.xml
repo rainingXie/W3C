@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/home1" />
+
+        <Button
+            android:id="@+id/pause"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="20dp"
+            android:text="暂 停" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/pause"
+            android:layout_toRightOf="@id/img" >
+
+            <ProgressBar
+                android:id="@+id/progress"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:id="@+id/percentage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/progress"
+                android:layout_marginTop="15dp"
+                android:text="60%"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/progress"
+                android:layout_marginTop="15dp"
+                android:layout_toLeftOf="@id/percentage"
+                android:ellipsize="middle"
+                android:singleLine="true"
+                android:text="java视频 "
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <CheckBox
+        android:id="@+id/chk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:visibility="gone" />
+
+</FrameLayout>

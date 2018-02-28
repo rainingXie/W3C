@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <ImageView 
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/home1"/>
+    <RelativeLayout 
+        android:id="@+id/config"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView 
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="名字名字名字名字名字名字名字名字名"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="5dp"
+            android:gravity="center_horizontal"/>
+        
+    </RelativeLayout>
+    
+
+</FrameLayout>

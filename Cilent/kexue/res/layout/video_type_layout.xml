@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="更多"
+            android:textSize="14sp"
+            android:layout_alignParentRight="true"
+            android:textColor="#A47C58" />
+        
+        <View
+            android:id="@+id/bar"
+            android:layout_width="6dp"
+            android:layout_height="20dp"
+            android:background="@color/topbar_bg"
+            android:layout_margin="8dp"
+            android:layout_alignParentLeft="true" />
+        <TextView
+            android:id="@+id/type_tag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="html"
+            android:layout_toLeftOf="@id/more"
+            android:layout_toRightOf="@id/bar"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/bottomtab_press" />
+    </RelativeLayout>
+
+    <com.example.w3c_school.view.MyGridView
+        android:id="@+id/typeGrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:gravity="center"
+        android:numColumns="3"
+        android:scrollbars="none"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dp" />
+
+</LinearLayout>

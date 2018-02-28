@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/click_btn_bg"
+    android:descendantFocusability="blocksDescendants">
+
+    <ImageView
+        android:id="@+id/videoImg"
+        android:layout_width="70dp"
+        android:layout_height="60dp" 
+        android:src="@drawable/video"
+        android:layout_margin="10dp"
+        android:scaleType="fitXY"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="5dp"
+            android:text="HTML属性教程v属性教程属性教程属性教程属性教"
+            android:textStyle="bold"
+            android:textColor="#000" />
+       
+        <TextView
+            android:id="@+id/timeTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/name"
+            android:layout_margin="5dp"
+            android:text="时长："
+            android:textStyle="bold" 
+            android:textColor="#696969"/>
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/timeTag"
+            android:layout_below="@id/name"
+            android:layout_margin="5dp"
+            android:text="10:30"
+            android:textColor="#696969"/>
+         <TextView
+            android:id="@+id/size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/time"
+            android:layout_margin="5dp"
+            android:text="9.4M"
+            android:textColor="#696969" />
+        <TextView
+            android:id="@+id/introduce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/size"
+            android:layout_below="@id/timeTag"
+            android:layout_margin="5dp"
+            android:layout_marginLeft="20dp"
+            android:text="已下载"
+            android:visibility="gone"
+            android:textColor="#696969"/>
+        <Button 
+            android:id="@+id/download"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="下载"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/name"
+            android:layout_marginRight="10dp"
+            android:textSize="14sp"
+            android:background="@drawable/click_btn_bg2"/>
+    </RelativeLayout>
+    
+
+</LinearLayout>

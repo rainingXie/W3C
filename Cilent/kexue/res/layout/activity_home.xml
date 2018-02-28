@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bottomtab_normal"
+        android:padding="5dp"
+        android:text="最新视频" />
+
+    <LinearLayout
+        android:id="@+id/banner_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bottomtab_normal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:padding="5dp"
+            android:text="热门评论" />
+
+        <TextView
+            android:id="@+id/allDiscuss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/click_btn_bg3"
+            android:padding="5dp"
+            android:text="查看全部" />
+    </RelativeLayout>
+
+    <com.example.w3c_school.view.AutoListView
+        android:id="@+id/commentList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none" />
+
+</LinearLayout>

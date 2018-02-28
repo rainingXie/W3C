@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.example.w3c_school"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/click_btn_bg"
+    android:descendantFocusability="blocksDescendants" >
+
+    <com.example.w3c_school.view.CircleImageView
+        android:id="@+id/user_img"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/w3welcome"
+        app:border_color="@color/topbar_bg"
+        app:border_width="2dp" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/user_img"
+        android:text="用户名"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:text="日期"
+        android:textColor="#696969"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/user_img"
+        android:text="发表内容" />
+
+    <TextView
+        android:id="@+id/discussNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/content"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:text="1234"
+        android:textColor="#696969"
+        android:textSize="12sp" />
+
+    <CheckBox
+        android:id="@+id/discuss"
+        android:layout_width="30dp"
+        android:layout_height="25dp"
+        android:layout_alignBaseline="@id/discussNum"
+        android:layout_below="@id/content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@id/discussNum"
+        android:button="@drawable/discuss" />
+
+    <TextView
+        android:id="@+id/goodNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/discussNum"
+        android:layout_below="@id/content"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@id/discuss"
+        android:text="1234"
+        android:textColor="#696969"
+        android:textSize="12sp" />
+
+    <CheckBox
+        android:id="@+id/good"
+        android:layout_width="30dp"
+        android:layout_height="25dp"
+        android:layout_alignBaseline="@id/discussNum"
+        android:layout_below="@id/content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@id/goodNum"
+        android:button="@drawable/chk_good" />
+
+</RelativeLayout>

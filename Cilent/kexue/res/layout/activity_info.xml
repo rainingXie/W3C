@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.example.w3c_school"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#eee"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/user_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bottomtab_normal"
+            android:orientation="horizontal"
+            android:paddingBottom="20dp"
+            android:paddingTop="10dp" >
+
+            <com.example.w3c_school.view.CircleImageView
+                android:id="@+id/photo"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/w3welcome"
+                app:border_color="@color/topbar_bg"
+                app:border_width="2dp" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="用户名"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/myDownload"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="0.5dp"
+            android:background="@drawable/click_btn_bg"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:clickable="true" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:paddingRight="10dp"
+                android:src="@drawable/lib_story_icon_arrow_right" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignTop="@+id/imageView1"
+                android:gravity="center_vertical"
+                android:text="我的下载"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/save"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="0.5dp"
+            android:background="@drawable/click_btn_bg"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:clickable="true" >
+            
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:gravity="center_vertical"
+                android:text="我的收藏"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:paddingRight="10dp"
+                android:src="@drawable/lib_story_icon_arrow_right" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/note"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="0.5dp"
+            android:background="@drawable/click_btn_bg"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:clickable="true" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:gravity="center_vertical"
+                android:text="我的笔记"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:paddingRight="10dp"
+                android:src="@drawable/lib_story_icon_arrow_right" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/updatePwd"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/click_btn_bg"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp" 
+            android:clickable="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:gravity="center_vertical"
+                android:text="密码修改"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:paddingRight="10dp"
+                android:src="@drawable/lib_story_icon_arrow_right" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/version"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/click_btn_bg"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp"
+            android:clickable="true" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:gravity="center_vertical"
+                android:text="版本检测"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/versionName"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:text="1.0"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/click_btn_bg"
+            android:clickable="true"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:gravity="center_vertical"
+                android:text="自动登录"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/auto_login"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:button="@drawable/open_close"
+                android:checked="true"
+                android:gravity="center_vertical"
+                android:paddingRight="10dp" />
+        </RelativeLayout>
+
+        <!-- <RelativeLayout
+            android:id="@+id/exit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="0.5dp"
+            android:background="@drawable/click_btn_bg"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp" 
+            android:clickable="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:gravity="center_vertical"
+                android:text="退出账号"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:paddingRight="10dp"
+                android:src="@drawable/lib_story_icon_arrow_right" />
+        </RelativeLayout> -->
+    </LinearLayout>
+
+</ScrollView>

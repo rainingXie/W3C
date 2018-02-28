@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gamelist_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp" 
+    android:background="@drawable/click_btn_bg"
+    android:descendantFocusability="blocksDescendants" >
+
+    <ImageView
+        android:id="@+id/app_icon"
+        android:layout_width="53dp"
+        android:layout_height="53dp"
+        android:layout_marginLeft="5dp"
+        android:adjustViewBounds="false"
+        android:padding="5dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/app_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/download_btn"
+        android:layout_width="55dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/style_btn_download"
+        android:focusable="false"
+        android:text="下载"
+        android:textColor="#ffffffff"
+        android:textSize="12sp" />
+
+</LinearLayout>

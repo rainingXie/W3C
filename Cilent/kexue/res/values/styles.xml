@@ -1,0 +1,67 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <!-- <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+        
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+       
+    </style> -->
+
+    <!-- Application theme. -->
+   <!--  <style name="AppTheme" parent="AppBaseTheme">
+        All customizations that are NOT specific to a particular API-level can go here.
+    </style> -->
+    
+    <style name="login_text_view">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/view_height</item>
+        <item name="android:layout_marginTop">@dimen/layout_marginTop</item>
+        <item name="android:layout_marginLeft">@dimen/layout_marginLeft</item>
+        <item name="android:layout_marginRight">@dimen/layout_marginRight</item>
+        <item name="android:background">@drawable/login_text_bg</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:textColor">@color/bottomtab_normal</item>
+        <item name="android:drawablePadding">10dp</item>
+    </style>
+
+    <style name="login_btn_view">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/view_height</item>
+        <item name="android:layout_marginTop">@dimen/layout_marginTop</item>
+        <item name="android:layout_marginLeft">@dimen/layout_marginLeft</item>
+        <item name="android:layout_marginRight">@dimen/layout_marginRight</item>
+        <item name="android:background">@drawable/login_btn_bg</item>
+        <item name="android:textColor">@color/login_btn_font</item>
+    </style>
+    
+    <style name="pop_bottom_style">
+       <!-- 指定显示动画 -->
+        <item name="android:windowEnterAnimation">@anim/bottom_in</item>
+        <!-- 指定消失动画 -->
+        <item name="android:windowExitAnimation">@anim/bottom_out</item>
+    </style>
+<style name="NotificationTitle" parent="android:TextAppearance.StatusBar.EventContent.Title" />
+
+    <style name="NotificationContent" parent="android:TextAppearance.StatusBar.EventContent" />
+    
+    <!-- umeng -->
+    
+    <style name="Theme.UMDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="Theme.UMDefault" parent="android:style/Theme.NoTitleBar"></style>
+    
+    <style name="customProgressBar" parent="@android:style/Widget.ProgressBar.Small">
+        <item name="android:indeterminateDrawable">@drawable/custom_progress_bar</item>
+        <item name="android:layout_width">21dip</item>
+        <item name="android:layout_height">21dip</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/click_btn_bg"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center" >
+
+    <ImageView
+        android:id="@+id/videoImg"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:scaleType="fitXY"
+        android:background="#000" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="表格布局（上）"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_margin="8dp" />
+
+    <!-- <TextView
+        android:id="@+id/time_length"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="10:09M"
+        android:textColor="@android:color/secondary_text_dark_nodisable"
+        android:textSize="12sp" /> -->
+
+    <TextView
+        android:id="@+id/totalTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="10:09"
+        android:paddingBottom="4dp"
+        android:textColor="@android:color/secondary_text_dark_nodisable"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/download_btn"
+        android:layout_width="55dp"
+        android:layout_height="30dp"
+        android:background="@drawable/style_btn_download"
+        android:focusable="false"
+        android:layout_gravity="center_horizontal"
+        android:text="下载"
+        android:textColor="#ffffffff"
+        android:textSize="12sp"
+        android:layout_marginBottom="4dp" />
+
+</LinearLayout>
