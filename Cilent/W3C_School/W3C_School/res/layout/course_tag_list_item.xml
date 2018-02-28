@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:text="HTML 教程"
+    android:textColor="#000"
+    android:textSize="14sp" 
+    android:padding="5dp"
+    android:id="@+id/courseItem"
+    android:background="#fff"/>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/click_btn_bg">
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp" 
+        android:src="@drawable/book"
+        android:layout_margin="10dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/nameTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="5dp"
+            android:text="课程名:"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/nameTag"
+            android:layout_alignParentTop="true"
+            android:layout_margin="5dp"
+            android:text="HTML" />
+        <TextView
+            android:id="@+id/introduceTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/nameTag"
+            android:layout_margin="5dp"
+            android:text="简介:"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/introduce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/introduceTag"
+            android:layout_below="@id/nameTag"
+            android:layout_margin="5dp"
+            android:text="html是nkncc"/>
+    </RelativeLayout>
+
+</LinearLayout>

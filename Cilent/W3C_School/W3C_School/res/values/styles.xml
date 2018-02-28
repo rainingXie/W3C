@@ -1,0 +1,62 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    
+    <style name="my_theme" parent="android:Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/my_actionBar_Blue</item>
+        <item name="homeAsUpIndicator">@drawable/browse_back_on</item>
+    </style>
+
+    <style name="myTitleColor" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">#000</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="my_actionBar_Blue" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@drawable/bookshelf_header_bg</item>
+        <item name="android:titleTextStyle">@style/myTitleColor</item>
+    </style>
+<style name="login_text_view">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/view_height</item>
+        <item name="android:layout_marginTop">@dimen/layout_marginTop</item>
+        <item name="android:layout_marginLeft">@dimen/layout_marginLeft</item>
+        <item name="android:layout_marginRight">@dimen/layout_marginRight</item>
+        <item name="android:background">@drawable/login_text_bg</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:textColor">@color/theme_book</item>
+        <item name="android:drawablePadding">10dp</item>
+    </style>
+
+    <style name="login_btn_view">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/view_height</item>
+        <item name="android:layout_marginTop">@dimen/layout_marginTop</item>
+        <item name="android:layout_marginLeft">@dimen/layout_marginLeft</item>
+        <item name="android:layout_marginRight">@dimen/layout_marginRight</item>
+        <item name="android:background">@drawable/login_btn_bg</item>
+        <item name="android:textColor">@color/login_btn_font</item>
+    </style>
+    
+    <style name="pop_bottom_style">
+       <!-- 指定显示动画 -->
+        <item name="android:windowEnterAnimation">@anim/bottom_in</item>
+        <!-- 指定消失动画 -->
+        <item name="android:windowExitAnimation">@anim/bottom_out</item>
+    </style>
+</resources>

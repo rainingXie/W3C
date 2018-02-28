@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.school.activity.LoginViewActivity" >
+
+   <LinearLayout
+       android:id="@+id/title"
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:orientation="horizontal"
+       android:background="@drawable/bookshelf_header_bg"
+       android:layout_alignParentTop="true"
+       android:layout_alignParentLeft="true"
+       >
+       <ImageView 
+           android:id="@+id/title_img"
+           android:layout_width="30dp"
+           android:layout_height="30dp"
+           android:src="@drawable/browse_back_on"
+           android:scaleType="fitXY"
+           android:layout_gravity="center_vertical"
+           android:contentDescription="@null"
+           android:onClick="back"
+           />
+        <TextView 
+           android:id="@+id/title_name"
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:layout_marginLeft="10dp"
+           android:text="修改密码"
+           android:textColor="#000"
+           android:gravity="center_vertical"
+           android:textStyle="bold"
+           android:textSize="20sp"
+           />
+   </LinearLayout>
+   <EditText 
+       android:id="@+id/row_password"
+       style="@style/login_text_view"
+       android:layout_below="@id/title"
+       android:hint="请输入原密码"
+       android:inputType="textPassword"
+       />
+   <EditText 
+       android:id="@+id/new_password"
+       style="@style/login_text_view"
+       android:layout_below="@id/row_password"
+       android:hint="请输入新密码"
+       android:inputType="textPassword"
+       />
+   <EditText 
+       android:id="@+id/again_password"
+       style="@style/login_text_view"
+       android:layout_below="@id/new_password"
+       android:hint="再次确认密码"
+       android:inputType="textPassword"
+       />
+   
+   <Button 
+       android:id="@+id/sure"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="@drawable/login_btn_bg2"
+       android:text="确定"
+       android:layout_marginTop="20dp"
+       android:layout_marginLeft="10dp"
+       android:layout_marginRight="10dp"
+       android:layout_below="@id/again_password"
+       />
+   
+
+</RelativeLayout>
